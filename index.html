@@ -5,3 +5,10 @@
         title="Rick Astley - Never Gonna Give You Up"></iframe>
 </div>
 <script src="https://player.vimeo.com/api/player.js"></script>
+
+var iframe = document.querySelector('iframe');
+var player = new Vimeo.Player(iframe);
+
+player.play().catch(function(error) {
+    console.log('Autoplay blocked:', error);
+});
