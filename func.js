@@ -66,7 +66,7 @@ function init(){
 		);
 	}, false );
 
-	request.open( 'GET', 'src/rickroll.mp3', true );
+	request.open( 'GET', 'youtube_dQw4w9WgXcQ_audio.mp3', true );
 	request.responseType = "arraybuffer";
 
 	request.send();
